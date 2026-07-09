@@ -46,17 +46,17 @@ KNav 是一个纯前端的浏览器新标签页起始页，把时钟、搜索、
 
 | Bing 壁纸 | 本地壁纸 | 纯色壁纸 |
 | :---: | :---: | :---: |
-| ![Bing 壁纸](./docs/images/home-bing.png) | ![本地壁纸](./docs/images/home-local.png) | ![纯色壁纸](./docs/images/home-soild.png) |
+| ![Bing 壁纸](./docs/images/home-bing.jpeg) | ![本地壁纸](./docs/images/home-local.jpeg) | ![纯色壁纸](./docs/images/home-soild.jpeg) |
 
 ### 设置中心
 
 | 通用设置 | 搜索设置 |
 | :---: | :---: |
-| ![通用设置](./docs/images/setting-general.png) | ![搜索设置](./docs/images/setting-search.png) |
+| ![通用设置](./docs/images/setting-general.jpeg) | ![搜索设置](./docs/images/setting-search.jpeg) |
 
 | 壁纸设置 | 快捷入口 |
 | :---: | :---: |
-| ![壁纸设置](./docs/images/setting-wallpaper.png) | ![快捷入口](./docs/images/setting-favorite.png) |
+| ![壁纸设置](./docs/images/setting-wallpaper.jpeg) | ![快捷入口](./docs/images/setting-favorite.jpeg) |
 
 ---
 
@@ -138,7 +138,7 @@ src/
 ├── layouts/      # 页面布局
 ├── lib/          # 底层库（配置导入导出、i18n、工具）
 ├── locales/      # 多语言资源（zh-CN / en-US）
-├── providers/    # 全局 Provider 与副作用
+├── providers/    # 全局 Provider
 ├── router/       # 路由定义
 ├── services/     # 数据与业务服务（壁纸、主题、可读性等）
 ├── stores/       # Zustand 状态仓库
