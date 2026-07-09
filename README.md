@@ -4,11 +4,14 @@
 
 现代、快速、可定制的浏览器起始页。
 
+[🌐 在线体验](https://go.kindyear.cn)
+
 [![License](https://img.shields.io/badge/License-KNav%20Community-black?style=flat-square)](./LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-black?style=flat-square)](./package.json)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white&style=flat-square)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white&style=flat-square)](https://vite.dev)
+[![Website](https://img.shields.io/badge/官方站点-go.kindyear.cn-ff7a17?style=flat-square)](https://go.kindyear.cn)
 
 </div>
 
