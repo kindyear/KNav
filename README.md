@@ -1,5 +1,7 @@
 <div align="center">
 
+![首页](./docs/images/home-bing.jpeg)
+
 # KNav
 
 现代、快速、可定制的浏览器起始页。
