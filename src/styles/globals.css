@@ -1,0 +1,224 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import './tokens.css';
+
+/*
+ * Enable class-based dark mode: `.dark` on <html> toggles the dark token set.
+ * (Tailwind v4 custom variant.)
+ */
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Map KNav design tokens → Tailwind theme.
+ * Consume via utilities like: bg-canvas, text-ink, border-hairline,
+ * rounded-sm, rounded-pill, font-mono, text-display-xl, etc.
+ * `inline` keeps everything referencing the live CSS variables so theme
+ * switching is instant and no color is ever hardcoded in components.
+ */
+@theme inline {
+  /* Surface */
+  --color-canvas: var(--canvas);
+  --color-canvas-soft: var(--canvas-soft);
+  --color-canvas-card: var(--canvas-card);
+  --color-canvas-mid: var(--canvas-mid);
+  --color-hairline: var(--hairline);
+
+  /* Text / Ink */
+  --color-ink: var(--ink);
+  --color-ink-hover: var(--ink-hover);
+  --color-body: var(--body);
+  --color-body-mid: var(--body-mid);
+  --color-mute: var(--mute);
+
+  /* Primary */
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+
+  /* Accent (brand-fixed) */
+  --color-accent-sunset: var(--accent-sunset);
+  --color-accent-sunset-soft: var(--accent-sunset-soft);
+  --color-accent-dusk: var(--accent-dusk);
+  --color-accent-twilight: var(--accent-twilight);
+  --color-accent-breeze: var(--accent-breeze);
+  --color-accent-midnight: var(--accent-midnight);
+
+  /* shadcn/ui semantic bridge */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Fonts */
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  /* Radius */
+  --radius-none: var(--radius-none);
+  --radius-sm: var(--radius-sm);
+  --radius-pill: var(--radius-pill);
+  --radius-full: var(--radius-full);
+
+  /* Spacing scale (extends default) */
+  --spacing-xxs: var(--spacing-xxs);
+  --spacing-xs: var(--spacing-xs);
+  --spacing-sm: var(--spacing-sm);
+  --spacing-md: var(--spacing-md);
+  --spacing-lg: var(--spacing-lg);
+  --spacing-xl: var(--spacing-xl);
+  --spacing-2xl: var(--spacing-2xl);
+  --spacing-3xl: var(--spacing-3xl);
+  --spacing-4xl: var(--spacing-4xl);
+
+  /* Typography ladder (font-size + line-height pairs) */
+  --text-display-xl: var(--text-display-xl);
+  --text-display-xl--line-height: var(--leading-display-xl);
+  --text-display-xl--letter-spacing: var(--tracking-display-xl);
+  --text-display-lg: var(--text-display-lg);
+  --text-display-lg--line-height: var(--leading-display-lg);
+  --text-display-lg--letter-spacing: var(--tracking-display-lg);
+  --text-display-md: var(--text-display-md);
+  --text-display-md--line-height: var(--leading-display-md);
+  --text-display-md--letter-spacing: var(--tracking-display-md);
+  --text-display-sm: var(--text-display-sm);
+  --text-display-sm--line-height: var(--leading-display-sm);
+  --text-display-sm--letter-spacing: var(--tracking-display-sm);
+  --text-display-xs: var(--text-display-xs);
+  --text-display-xs--line-height: var(--leading-display-xs);
+  --text-body-lg: var(--text-body-lg);
+  --text-body-lg--line-height: var(--leading-body-lg);
+  --text-body-md: var(--text-body-md);
+  --text-body-md--line-height: var(--leading-body-md);
+  --text-body-sm: var(--text-body-sm);
+  --text-body-sm--line-height: var(--leading-body-sm);
+  --text-caption-mono: var(--text-caption-mono);
+  --text-caption-mono--line-height: var(--leading-caption-mono);
+  --text-caption-mono--letter-spacing: var(--tracking-caption-mono);
+  --text-caption-mono-sm: var(--text-caption-mono-sm);
+  --text-caption-mono-sm--line-height: var(--leading-caption-mono-sm);
+  --text-caption-mono-sm--letter-spacing: var(--tracking-caption-mono-sm);
+  --text-button-md: var(--text-button-md);
+  --text-button-md--line-height: var(--leading-button-md);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    /*
+     * Background Readability System defaults.
+     * These CSS variables are overwritten at runtime by the
+     * BackgroundReadabilityManager based on wallpaper analysis + user settings.
+     * Defaults are safe values used before any analysis completes.
+     */
+    --overlay-opacity: 0.18;
+    --fg-rgb: 255, 255, 255;
+    --fg-ink: rgba(255, 255, 255, 1);
+    --fg-body: rgba(255, 255, 255, 0.82);
+    --fg-mute: rgba(255, 255, 255, 0.62);
+    --fg-active-bg: rgba(255, 255, 255, 0.92);
+    --fg-active-fg: rgba(15, 15, 15, 1);
+    --fg-text-shadow: none;
+    --glass-blur: 12px;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-bg-hover: rgba(255, 255, 255, 0.16);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    --readability-transition: 250ms ease;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-regular);
+    font-size: var(--text-body-md);
+    line-height: var(--leading-body-md);
+  }
+
+  /* Respect reduced-motion preferences globally. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/*
+ * Background Readability System — foreground utilities.
+ * Applied to hero/footer/card content sitting above the wallpaper + overlay.
+ * All values reference the runtime readability CSS variables so they animate
+ * smoothly (250ms) when the background changes.
+ */
+@layer components {
+  /* Foreground text colors driven by wallpaper analysis. */
+  .fg-ink {
+    color: var(--fg-ink);
+    transition: color var(--readability-transition);
+  }
+  .fg-body {
+    color: var(--fg-body);
+    transition: color var(--readability-transition);
+  }
+  .fg-mute {
+    color: var(--fg-mute);
+    transition: color var(--readability-transition);
+  }
+
+  /* Subtle text shadow for the clock / date / footer (never an outline). */
+  .fg-text-shadow {
+    text-shadow: var(--fg-text-shadow);
+    transition:
+      color var(--readability-transition),
+      text-shadow var(--readability-transition);
+  }
+
+  /*
+   * Frosted-glass surface for cards / inputs / buttons that sit on the
+   * wallpaper. Blur applies only to these surfaces, never the whole page.
+   *
+   * Performance: only `background-color` / `border-color` are transitioned.
+   * `backdrop-filter` and `box-shadow` are deliberately NOT animated — animating
+   * a blur filter forces a full-layer GPU repaint every frame and is the main
+   * cause of scroll jank. The blur value can still change (readability), it just
+   * snaps instead of tweening. A raised `--glass-bg` opacity keeps contrast so
+   * we don't rely on blur alone, allowing a lower (cheaper) blur radius.
+   */
+  .glass-surface {
+    background-color: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(var(--glass-blur));
+    transition:
+      background-color var(--readability-transition),
+      border-color var(--readability-transition);
+  }
+  .glass-surface-hover:hover {
+    background-color: var(--glass-bg-hover);
+  }
+}

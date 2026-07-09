@@ -1,0 +1,188 @@
+/**
+ * KNav Design Tokens
+ * ---------------------------------------------------------------------------
+ * Single source of truth for all design primitives, derived strictly from
+ * docs/design.md (xAI-inspired system).
+ *
+ * RULES:
+ *  - Never hardcode colors in components. Consume these CSS variables (directly
+ *    or via the Tailwind theme mapping in globals.css).
+ *  - The `.dark` block is the canonical brand surface (design.md is dark-only).
+ *  - The `:root` (light) block is a derived counterpart to satisfy the KNav
+ *    Light / Dark / System theme requirement. It mirrors the token structure.
+ * ---------------------------------------------------------------------------
+ */
+
+:root {
+  /* ── Radius ──────────────────────────────────────────────────────────── */
+  --radius-none: 0px;
+  --radius-sm: 8px; /* card chrome — design.md --radius */
+  --radius-pill: 9999px; /* every interactive element */
+  --radius-full: 9999px;
+
+  /* ── Spacing (base unit 4px) ─────────────────────────────────────────── */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+  --spacing-3xl: 48px;
+  --spacing-4xl: 64px;
+
+  /* ── Typography — families ───────────────────────────────────────────── */
+  --font-display:
+    'universalSans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'universalSans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:
+    'GeistMono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+
+  /* ── Typography — size ladder ────────────────────────────────────────── */
+  --text-display-xl: 96px;
+  --text-display-lg: 72px;
+  --text-display-md: 48px;
+  --text-display-sm: 32px;
+  --text-display-xs: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
+  --text-caption-mono: 14px;
+  --text-caption-mono-sm: 12px;
+  --text-button-md: 14px;
+
+  /* ── Typography — line heights ───────────────────────────────────────── */
+  --leading-display-xl: 96px;
+  --leading-display-lg: 72px;
+  --leading-display-md: 48px;
+  --leading-display-sm: 36px;
+  --leading-display-xs: 28px;
+  --leading-body-lg: 28px;
+  --leading-body-md: 24px;
+  --leading-body-sm: 20px;
+  --leading-caption-mono: 20px;
+  --leading-caption-mono-sm: 16px;
+  --leading-button-md: 20px;
+
+  /* ── Typography — letter spacing ─────────────────────────────────────── */
+  --tracking-display-xl: -2.4px;
+  --tracking-display-lg: -1.8px;
+  --tracking-display-md: -1.2px;
+  --tracking-display-sm: -0.6px;
+  --tracking-display-xs: 0px;
+  --tracking-caption-mono: 1.4px;
+  --tracking-caption-mono-sm: 1.2px;
+
+  /* ── Weight ──────────────────────────────────────────────────────────── */
+  --weight-regular: 400; /* the brand never bolds */
+
+  /* ── Border ──────────────────────────────────────────────────────────── */
+  --border-width: 1px;
+  --border-pill-translucent: rgba(0, 0, 0, 0.15);
+
+  /* ── Animation ───────────────────────────────────────────────────────── */
+  --duration-instant: 80ms;
+  --duration-fast: 150ms;
+  --duration-base: 240ms;
+  --duration-slow: 400ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0, 0, 0, 1);
+
+  /* ── Accent palette (brand-fixed across themes) ──────────────────────── */
+  --accent-sunset: #ff7a17;
+  --accent-sunset-soft: #ffc285;
+  --accent-dusk: #7c3aed;
+  --accent-twilight: #c4b5fd;
+  --accent-breeze: #a0c3ec;
+  --accent-midnight: #0d1726;
+
+  /* ═══════════════════════════════════════════════════════════════════════
+   * LIGHT THEME (derived counterpart — polarity flipped from the dark brand)
+   * ═══════════════════════════════════════════════════════════════════════ */
+
+  /* Surface */
+  --canvas: #ffffff;
+  --canvas-soft: #f4f4f2;
+  --canvas-card: #fafafa;
+  --canvas-mid: #e6e6e4;
+  --hairline: #e4e4e7;
+
+  /* Text / Ink */
+  --ink: #0a0a0a;
+  --ink-hover: #1a1a1a;
+  --body: #3f3f46;
+  --body-mid: #71717a;
+  --mute: #71717a;
+
+  /* Primary (inverse of canvas) */
+  --primary: #0a0a0a;
+  --on-primary: #ffffff;
+
+  /* ── shadcn/ui semantic bridge ───────────────────────────────────────── */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--canvas-card);
+  --card-foreground: var(--ink);
+  --popover: var(--canvas-soft);
+  --popover-foreground: var(--ink);
+  --primary-foreground: var(--on-primary);
+  --secondary: var(--canvas-soft);
+  --secondary-foreground: var(--ink);
+  --muted: var(--canvas-soft);
+  --muted-foreground: var(--body-mid);
+  --accent: var(--canvas-soft);
+  --accent-foreground: var(--ink);
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: var(--hairline);
+  --input: var(--canvas-soft);
+  --ring: var(--ink);
+  --radius: var(--radius-sm);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+ * DARK THEME (canonical brand surface — design.md is dark-canvas only)
+ * ═══════════════════════════════════════════════════════════════════════════ */
+.dark {
+  /* Surface */
+  --canvas: #0a0a0a;
+  --canvas-soft: #1a1c20;
+  --canvas-card: #191919;
+  --canvas-mid: #363a3f;
+  --hairline: #212327;
+
+  /* Text / Ink */
+  --ink: #ffffff;
+  --ink-hover: #fafaf7;
+  --body: #dadbdf;
+  --body-mid: #7d8187;
+  --mute: #7d8187;
+
+  /* Primary — the brand's white-on-near-black signature */
+  --primary: #ffffff;
+  --on-primary: #0a0a0a;
+
+  /* Outline pill uses translucent white borders on dark */
+  --border-pill-translucent: rgba(255, 255, 255, 0.25);
+
+  /* ── shadcn/ui semantic bridge ───────────────────────────────────────── */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--canvas-card);
+  --card-foreground: var(--ink);
+  --popover: var(--canvas-soft);
+  --popover-foreground: var(--ink);
+  --primary-foreground: var(--on-primary);
+  --secondary: var(--canvas-soft);
+  --secondary-foreground: var(--ink);
+  --muted: var(--canvas-soft);
+  --muted-foreground: var(--body-mid);
+  --accent: var(--canvas-soft);
+  --accent-foreground: var(--ink);
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: var(--hairline);
+  --input: var(--canvas-soft);
+  --ring: var(--ink);
+}

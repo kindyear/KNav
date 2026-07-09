@@ -1,0 +1,48 @@
+{
+  "title": "Quick Access",
+  "ariaLabel": "Quick access",
+  "manager": {
+    "addWebsite": "Add Website",
+    "activated": "Activated",
+    "hidden": "Hidden",
+    "enable": "Enable",
+    "hide": "Hide",
+    "edit": "Edit",
+    "delete": "Delete",
+    "emptyActivated": "No sites enabled yet.",
+    "emptyHidden": "No hidden sites.",
+    "limitReached": "Maximum of {{max}} quick access items.",
+    "toasts": {
+      "added": "Website added",
+      "updated": "Website updated",
+      "deleted": "Website deleted"
+    },
+    "confirmDelete": {
+      "title": "Delete \"{{name}}\"?",
+      "description": "This action cannot be undone.",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "dialog": {
+      "addTitle": "Add Website",
+      "editTitle": "Edit Website",
+      "description": "Add a website to your quick access grid. The URL must start with http:// or https://.",
+      "name": "Website Name",
+      "namePlaceholder": "e.g. GitHub",
+      "url": "Website URL",
+      "urlHint": "Must start with http:// or https:// — e.g. https://github.com",
+      "category": "Category",
+      "categoryPlaceholder": "e.g. dev, ai, social",
+      "descriptionField": "Description",
+      "descriptionPlaceholder": "Optional",
+      "accentColor": "Accent Color",
+      "accentColorPlaceholder": "Optional — e.g. #4285F4",
+      "clearColor": "Clear",
+      "iconLabel": "Pick an icon",
+      "iconSearch": "Search icons...",
+      "iconNoResults": "No matching icons.",
+      "cancel": "Cancel",
+      "save": "Save"
+    }
+  }
+}

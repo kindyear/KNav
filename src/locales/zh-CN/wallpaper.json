@@ -1,0 +1,108 @@
+{
+  "typeLabel": "壁纸类型",
+  "typeGroupAriaLabel": "壁纸类型",
+  "types": {
+    "solid": "纯色",
+    "gradient": "渐变",
+    "bing": "必应",
+    "local": "本地"
+  },
+  "solid": {
+    "presetsTitle": "预设",
+    "presetsDescription": "为背景选择一种纯色。",
+    "customTitle": "自定义颜色",
+    "customDescription": "最多可添加六种自定义颜色。",
+    "addColor": "添加颜色",
+    "addColorFailed": "无法添加颜色（重复或已达上限）。",
+    "removeColorAriaLabel": "移除颜色"
+  },
+  "colorPicker": {
+    "hexLabel": "十六进制",
+    "rgbLabel": "RGB",
+    "apply": "应用"
+  },
+  "gradient": {
+    "presetsTitle": "渐变预设",
+    "presetsDescription": "选择一个现成的渐变。",
+    "customTitle": "自定义渐变",
+    "customDescription": "最多可创建六个自定义渐变。",
+    "createGradient": "创建渐变",
+    "createFailed": "自定义渐变已达上限。",
+    "removeGradientAriaLabel": "移除渐变",
+    "editor": {
+      "title": "渐变编辑器",
+      "description": "微调当前渐变。",
+      "colors": "颜色",
+      "addStop": "添加色标",
+      "stopAriaLabel": "色标 {{index}}",
+      "removeStopAriaLabel": "移除色标",
+      "typeLabel": "渐变类型",
+      "types": {
+        "linear": "线性",
+        "radial": "径向",
+        "conic": "锥形"
+      },
+      "directionLabel": "方向"
+    }
+  },
+  "presets": {
+    "blue-purple": "蓝紫",
+    "pink-purple": "粉紫",
+    "sunset": "日落",
+    "deep-space": "深空",
+    "aurora": "极光",
+    "ocean": "海洋",
+    "forest": "森林",
+    "rose": "玫瑰",
+    "amber": "琥珀",
+    "twilight": "暮光"
+  },
+  "bing": {
+    "modeTitle": "模式",
+    "modeDescription": "选择必应壁纸的更新方式。",
+    "modes": {
+      "daily": "每日轮换",
+      "random": "随机"
+    },
+    "todayTitle": "今日壁纸",
+    "todayDescription": "来自必应的每日图片。",
+    "previewAlt": "必应壁纸预览",
+    "loading": "加载中…",
+    "fetchError": "无法获取 Bing 每日壁纸。",
+    "infoTitle": "图片信息",
+    "info": {
+      "title": "标题",
+      "copyright": "版权",
+      "date": "日期",
+      "resolution": "分辨率"
+    },
+    "placeholderValue": "—",
+    "refresh": "刷新",
+    "download": "下载"
+  },
+  "local": {
+    "uploadTitle": "上传壁纸",
+    "uploadHint": "将图片拖放到此处，或点击浏览。",
+    "supported": "支持格式：PNG、JPG、WEBP",
+    "invalidType": "不支持的文件类型，请使用 PNG、JPG 或 WEBP。",
+    "uploadFailed": "读取图片文件失败。",
+    "currentTitle": "当前壁纸",
+    "remove": "移除",
+    "emptyTitle": "尚未上传壁纸",
+    "emptyDescription": "你上传的壁纸将显示在这里。"
+  },
+  "readability": {
+    "title": "背景可读性",
+    "description": "在任何壁纸下都保持前景内容清晰可读。",
+    "overlayLabel": "遮罩强度",
+    "overlay": {
+      "auto": "自动",
+      "low": "低",
+      "medium": "中",
+      "high": "高"
+    },
+    "glassEffect": "玻璃效果",
+    "textShadow": "文字阴影",
+    "autoTextColor": "自动文字颜色"
+  }
+}

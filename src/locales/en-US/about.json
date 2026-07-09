@@ -1,0 +1,56 @@
+{
+  "title": "About",
+  "description": "Information about KNav.",
+  "header": {
+    "subtitle": "A modern, customizable and open-source new tab homepage.",
+    "intro": "Start Smarter.",
+    "version": "Version {{version}}"
+  },
+  "actions": {
+    "open": "Open",
+    "website": "Website",
+    "github": "GitHub"
+  },
+  "developer": {
+    "title": "Developer",
+    "fields": {
+      "blog": "Blog",
+      "bilibili": "Bilibili",
+      "x": "X",
+      "email": "Email"
+    }
+  },
+  "version": {
+    "title": "Version",
+    "current": "Current Version",
+    "buildTime": "Build Time",
+    "environment": "Environment",
+    "nodeVersion": "Node.js",
+    "gitCommit": "Git Commit",
+    "notAvailable": "Not available"
+  },
+  "openSource": {
+    "title": "Open Source",
+    "description": "Open-source projects and code used by KNav.",
+    "dependencies": "Dependencies",
+    "repository": "Source Code",
+    "license": "License"
+  },
+  "libraries": {
+    "title": "Open Source",
+    "description": "Open-source projects and code used by KNav.",
+    "view": "View libraries",
+    "dependencies": "Dependencies",
+    "devDependencies": "Dev Dependencies",
+    "unknownLicense": "Unknown"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "If you encounter any issues or have suggestions, please submit an Issue on GitHub.",
+    "issues": "GitHub Issues"
+  },
+  "footer": {
+    "copyright": "Copyright © {{year}} {{holder}}",
+    "madeWith": "Made with ❤️ using React & TypeScript."
+  }
+}

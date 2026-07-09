@@ -1,0 +1,184 @@
+{
+  "title": "Settings",
+  "openAriaLabel": "Open settings",
+  "closeAriaLabel": "Close settings",
+  "categoriesAriaLabel": "Settings categories",
+  "categories": {
+    "general": "General",
+    "appearance": "Appearance",
+    "background": "Background",
+    "search": "Search",
+    "quickAccess": "Quick Access",
+    "about": "About"
+  },
+  "general": {
+    "title": "General",
+    "description": "Basic preferences for language, theme, and locale.",
+    "groups": {
+      "preferences": "Preferences",
+      "data": "Data",
+      "dangerZone": "Danger Zone"
+    },
+    "items": {
+      "language": {
+        "title": "Language",
+        "description": "Choose the display language."
+      },
+      "appearance": {
+        "title": "Appearance",
+        "description": "Choose the application theme."
+      },
+      "timeFormat": {
+        "title": "Time Format",
+        "description": "Display time format."
+      },
+      "dateFormat": {
+        "title": "Date Format",
+        "description": "Choose how dates are displayed."
+      },
+      "showWeekday": {
+        "title": "Show Weekday",
+        "description": "Display weekday below the date."
+      },
+      "showSeconds": {
+        "title": "Show Seconds",
+        "description": "Display seconds in the clock."
+      },
+      "autoFocusSearch": {
+        "title": "Auto Focus Search",
+        "description": "Automatically focus the search box when opening the page."
+      },
+      "enterBehavior": {
+        "title": "Enter Key",
+        "description": "Choose how Enter opens search results."
+      },
+      "importSettings": {
+        "title": "Import Settings",
+        "description": "Import settings from a configuration file."
+      },
+      "exportSettings": {
+        "title": "Export Settings",
+        "description": "Export all current settings."
+      },
+      "restoreDefaults": {
+        "title": "Restore Defaults",
+        "description": "Reset all settings to their default values."
+      },
+      "clearData": {
+        "title": "Clear Local Data",
+        "description": "Remove all locally stored data."
+      }
+    },
+    "options": {
+      "followSystem": "Follow System",
+      "followLanguage": "Follow Language",
+      "zhCN": "简体中文",
+      "en": "English",
+      "light": "Light",
+      "dark": "Dark",
+      "hour24": "24-hour",
+      "hour12": "12-hour",
+      "currentTab": "Current Tab",
+      "newTab": "New Tab"
+    },
+    "actions": {
+      "import": "Import",
+      "export": "Export",
+      "restore": "Restore",
+      "clear": "Clear",
+      "cancel": "Cancel"
+    },
+    "dialogs": {
+      "restore": {
+        "title": "Restore all settings?",
+        "description": "This will reset every setting to its default value."
+      },
+      "clear": {
+        "title": "Clear local data?",
+        "description": "This action cannot be undone."
+      }
+    },
+    "toasts": {
+      "imported": "Import completed — {{modules}} modules, {{wallpapers}} wallpapers restored.",
+      "importedPartial": "Import completed — {{modules}} modules, {{wallpapers}} wallpapers restored, {{failed}} wallpaper(s) failed.",
+      "importError": "Not a valid KNav configuration file.",
+      "exported": "Export completed",
+      "restored": "Settings restored to defaults",
+      "cleared": "Local data cleared. Reloading…",
+      "languageUpdated": "Language updated",
+      "themeUpdated": "Theme updated"
+    },
+    "largeExport": {
+      "title": "Large file",
+      "description": "The export file is approximately {{size}} MB. Continue?",
+      "cancel": "Cancel",
+      "confirm": "Continue"
+    }
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Customize the look and feel of the interface.",
+    "items": {
+      "theme": {
+        "title": "Theme",
+        "description": "Choose the base color scheme."
+      },
+      "accent": {
+        "title": "Accent",
+        "description": "Pick an accent color for highlights."
+      },
+      "animations": {
+        "title": "Animations",
+        "description": "Enable or reduce motion."
+      },
+      "density": {
+        "title": "Density",
+        "description": "Adjust spacing and compactness."
+      }
+    }
+  },
+  "background": {
+    "title": "Background",
+    "description": "Configure the wallpaper and background effects.",
+    "items": {
+      "wallpaper": {
+        "title": "Wallpaper",
+        "description": "Select or upload a background image."
+      },
+      "blur": {
+        "title": "Blur",
+        "description": "Control the background blur amount."
+      },
+      "overlay": {
+        "title": "Overlay",
+        "description": "Adjust the darkening overlay."
+      },
+      "preview": {
+        "title": "Background Preview",
+        "description": "Preview the current background."
+      }
+    }
+  },
+  "search": {
+    "title": "Search",
+    "description": "Manage search providers.",
+    "items": {
+      "defaultProvider": {
+        "title": "Default Search Provider",
+        "description": "Choose the default search engine."
+      },
+      "suggestions": {
+        "title": "Search Suggestions",
+        "description": "Toggle live search suggestions."
+      },
+      "history": {
+        "title": "Search History",
+        "description": "Manage recent search history."
+      }
+    }
+  },
+  "quickAccess": {
+    "title": "Quick Access",
+    "description": "Organize your pinned sites and shortcuts."
+  }
+}

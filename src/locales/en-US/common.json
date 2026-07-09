@@ -1,0 +1,33 @@
+{
+  "app": {
+    "name": "KNav"
+  },
+  "actions": {
+    "close": "Close",
+    "clear": "Clear",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "import": "Import",
+    "export": "Export"
+  },
+  "state": {
+    "loading": "Loading",
+    "empty": "Nothing here yet"
+  },
+  "iconPicker": {
+    "trigger": "Pick an icon",
+    "searchPlaceholder": "Search icons...",
+    "loading": "Loading icons...",
+    "noResults": "No matching icons.",
+    "empty": "No icons to show.",
+    "previewHint": "Hover an icon to preview.",
+    "tabs": {
+      "recent": "Recent",
+      "all": "All",
+      "brands": "Brands",
+      "system": "System",
+      "developer": "Developer",
+      "other": "Other"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "title": "关于",
+  "description": "关于 KNav 的信息。",
+  "header": {
+    "subtitle": "一个现代、可定制的开源新标签页主页。",
+    "intro": "Start Smarter.",
+    "version": "版本 {{version}}"
+  },
+  "actions": {
+    "open": "打开",
+    "website": "官网",
+    "github": "GitHub"
+  },
+  "developer": {
+    "title": "开发者",
+    "fields": {
+      "blog": "博客",
+      "bilibili": "哔哩哔哩",
+      "x": "X",
+      "email": "邮箱"
+    }
+  },
+  "version": {
+    "title": "版本信息",
+    "current": "当前版本",
+    "buildTime": "构建时间",
+    "environment": "运行环境",
+    "nodeVersion": "Node.js",
+    "gitCommit": "Git 提交",
+    "notAvailable": "暂不可用"
+  },
+  "openSource": {
+    "title": "开源",
+    "description": "KNav 使用的开源项目与代码。",
+    "dependencies": "相关依赖",
+    "repository": "项目开源地址",
+    "license": "开源许可证"
+  },
+  "libraries": {
+    "title": "开源",
+    "description": "KNav 使用的开源项目与代码。",
+    "view": "查看开源项目",
+    "dependencies": "生产依赖",
+    "devDependencies": "开发依赖",
+    "unknownLicense": "未知"
+  },
+  "feedback": {
+    "title": "反馈",
+    "description": "如果你遇到任何问题或有建议，请在 GitHub 上提交 Issue。",
+    "issues": "GitHub Issues"
+  },
+  "footer": {
+    "copyright": "版权所有 © {{year}} {{holder}}",
+    "madeWith": "使用 React 与 TypeScript 用心打造 ❤️"
+  }
+}

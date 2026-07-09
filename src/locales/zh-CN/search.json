@@ -1,0 +1,75 @@
+{
+  "placeholder": "搜索任何内容...",
+  "placeholderWithProvider": "使用 {{provider}} 开始搜索...",
+  "ariaLabel": "搜索任何内容",
+  "enterHint": "回车 ↵",
+  "engineGroupLabel": "搜索引擎",
+  "history": {
+    "title": "最近搜索",
+    "clear": "清空",
+    "clearAriaLabel": "清空搜索历史",
+    "fillAriaLabel": "填入搜索词“{{query}}”（曾使用 {{provider}} 搜索）",
+    "viewAll": "查看全部历史",
+    "today": "今天",
+    "yesterday": "昨天"
+  },
+  "historyDialog": {
+    "title": "搜索历史",
+    "closeAriaLabel": "关闭历史",
+    "searchPlaceholder": "搜索历史...",
+    "clearAll": "清空全部",
+    "empty": "暂无搜索历史。",
+    "noResults": "没有匹配的历史记录。",
+    "deleteAriaLabel": "删除该记录",
+    "count_one": "{{count}} 条记录",
+    "count_other": "{{count}} 条记录",
+    "close": "关闭",
+    "confirm": {
+      "title": "清空全部搜索历史？",
+      "description": "此操作无法撤销。",
+      "cancel": "取消",
+      "clear": "清空"
+    }
+  },
+  "providers": {
+    "addProvider": "添加搜索源",
+    "activated": "已启用",
+    "available": "可用",
+    "enable": "启用",
+    "disable": "停用",
+    "edit": "编辑",
+    "delete": "删除",
+    "emptyActivated": "尚未启用任何搜索源。",
+    "emptyAvailable": "所有搜索源均已启用。",
+    "limitReached": "最多只能启用 {{max}} 个搜索源。",
+    "toasts": {
+      "added": "已添加搜索源",
+      "updated": "已更新搜索源",
+      "deleted": "已删除搜索源"
+    },
+    "confirmDelete": {
+      "title": "删除“{{name}}”？",
+      "description": "此操作无法撤销。",
+      "cancel": "取消",
+      "delete": "删除"
+    },
+    "dialog": {
+      "addTitle": "添加搜索源",
+      "editTitle": "编辑搜索源",
+      "description": "创建自定义搜索源。搜索 URL 必须包含 %s。",
+      "name": "搜索源名称",
+      "namePlaceholder": "例如 Google",
+      "url": "搜索 URL",
+      "urlHint": "必须包含 %s，将被替换为你的关键词。例如 https://www.google.com/search?q=%s",
+      "category": "分类",
+      "categoryPlaceholder": "例如 general、ai、dev",
+      "descriptionField": "描述",
+      "descriptionPlaceholder": "可选",
+      "iconLabel": "选择图标",
+      "iconSearch": "搜索图标...",
+      "iconNoResults": "没有匹配的图标。",
+      "cancel": "取消",
+      "save": "保存"
+    }
+  }
+}

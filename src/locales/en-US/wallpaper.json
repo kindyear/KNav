@@ -1,0 +1,108 @@
+{
+  "typeLabel": "Wallpaper Type",
+  "typeGroupAriaLabel": "Wallpaper type",
+  "types": {
+    "solid": "Solid",
+    "gradient": "Gradient",
+    "bing": "Bing",
+    "local": "Local"
+  },
+  "solid": {
+    "presetsTitle": "Presets",
+    "presetsDescription": "Choose a solid color for the background.",
+    "customTitle": "Custom Colors",
+    "customDescription": "Add up to six of your own colors.",
+    "addColor": "Add Color",
+    "addColorFailed": "Couldn't add color (duplicate or limit reached).",
+    "removeColorAriaLabel": "Remove color"
+  },
+  "colorPicker": {
+    "hexLabel": "Hex",
+    "rgbLabel": "RGB",
+    "apply": "Apply"
+  },
+  "gradient": {
+    "presetsTitle": "Gradient Presets",
+    "presetsDescription": "Pick a ready-made gradient.",
+    "customTitle": "Custom Gradients",
+    "customDescription": "Create up to six of your own gradients.",
+    "createGradient": "Create Gradient",
+    "createFailed": "Custom gradient limit reached.",
+    "removeGradientAriaLabel": "Remove gradient",
+    "editor": {
+      "title": "Gradient Editor",
+      "description": "Fine-tune the current gradient.",
+      "colors": "Colors",
+      "addStop": "Add color stop",
+      "stopAriaLabel": "Color stop {{index}}",
+      "removeStopAriaLabel": "Remove color stop",
+      "typeLabel": "Gradient Type",
+      "types": {
+        "linear": "Linear",
+        "radial": "Radial",
+        "conic": "Conic"
+      },
+      "directionLabel": "Direction"
+    }
+  },
+  "presets": {
+    "blue-purple": "Blue Purple",
+    "pink-purple": "Pink Purple",
+    "sunset": "Sunset",
+    "deep-space": "Deep Space",
+    "aurora": "Aurora",
+    "ocean": "Ocean",
+    "forest": "Forest",
+    "rose": "Rose",
+    "amber": "Amber",
+    "twilight": "Twilight"
+  },
+  "bing": {
+    "modeTitle": "Mode",
+    "modeDescription": "Choose how the Bing wallpaper updates.",
+    "modes": {
+      "daily": "Daily",
+      "random": "Random"
+    },
+    "todayTitle": "Today's Wallpaper",
+    "todayDescription": "The daily image from Bing.",
+    "previewAlt": "Bing wallpaper preview",
+    "loading": "Loading…",
+    "fetchError": "Unable to fetch the Bing daily wallpaper.",
+    "infoTitle": "Image Information",
+    "info": {
+      "title": "Title",
+      "copyright": "Copyright",
+      "date": "Date",
+      "resolution": "Resolution"
+    },
+    "placeholderValue": "—",
+    "refresh": "Refresh",
+    "download": "Download"
+  },
+  "local": {
+    "uploadTitle": "Upload Wallpaper",
+    "uploadHint": "Drag & drop an image here, or click to browse.",
+    "supported": "Supported: PNG, JPG, WEBP",
+    "invalidType": "Unsupported file type. Use PNG, JPG, or WEBP.",
+    "uploadFailed": "Failed to read the image file.",
+    "currentTitle": "Current Wallpaper",
+    "remove": "Remove",
+    "emptyTitle": "No wallpaper uploaded",
+    "emptyDescription": "Your uploaded wallpaper will appear here."
+  },
+  "readability": {
+    "title": "Background Readability",
+    "description": "Keep foreground content legible over any wallpaper.",
+    "overlayLabel": "Overlay Strength",
+    "overlay": {
+      "auto": "Auto",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "glassEffect": "Glass Effect",
+    "textShadow": "Text Shadow",
+    "autoTextColor": "Auto Text Color"
+  }
+}

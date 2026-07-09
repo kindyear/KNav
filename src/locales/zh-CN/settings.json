@@ -1,0 +1,184 @@
+{
+  "title": "设置",
+  "openAriaLabel": "打开设置",
+  "closeAriaLabel": "关闭设置",
+  "categoriesAriaLabel": "设置分类",
+  "categories": {
+    "general": "通用",
+    "appearance": "外观",
+    "background": "背景",
+    "search": "搜索",
+    "quickAccess": "快捷入口",
+    "about": "关于"
+  },
+  "general": {
+    "title": "通用",
+    "description": "语言、主题与区域的基础偏好设置。",
+    "groups": {
+      "preferences": "偏好设置",
+      "data": "数据",
+      "dangerZone": "危险区域"
+    },
+    "items": {
+      "language": {
+        "title": "语言",
+        "description": "选择界面显示语言。"
+      },
+      "appearance": {
+        "title": "外观",
+        "description": "选择应用主题。"
+      },
+      "timeFormat": {
+        "title": "时间格式",
+        "description": "设置时间显示格式。"
+      },
+      "dateFormat": {
+        "title": "日期格式",
+        "description": "选择日期的显示方式。"
+      },
+      "showWeekday": {
+        "title": "显示星期",
+        "description": "在日期下方显示星期。"
+      },
+      "showSeconds": {
+        "title": "显示秒数",
+        "description": "在时钟中显示秒数。"
+      },
+      "autoFocusSearch": {
+        "title": "自动聚焦搜索框",
+        "description": "打开页面时自动聚焦搜索框。"
+      },
+      "enterBehavior": {
+        "title": "回车行为",
+        "description": "选择回车键打开搜索结果的方式。"
+      },
+      "importSettings": {
+        "title": "导入设置",
+        "description": "从配置文件导入设置。"
+      },
+      "exportSettings": {
+        "title": "导出设置",
+        "description": "导出当前所有设置。"
+      },
+      "restoreDefaults": {
+        "title": "恢复默认",
+        "description": "将所有设置重置为默认值。"
+      },
+      "clearData": {
+        "title": "清除本地数据",
+        "description": "删除所有本地存储的数据。"
+      }
+    },
+    "options": {
+      "followSystem": "跟随系统",
+      "followLanguage": "跟随语言",
+      "zhCN": "简体中文",
+      "en": "English",
+      "light": "浅色",
+      "dark": "深色",
+      "hour24": "24 小时制",
+      "hour12": "12 小时制",
+      "currentTab": "当前标签页",
+      "newTab": "新标签页"
+    },
+    "actions": {
+      "import": "导入",
+      "export": "导出",
+      "restore": "恢复",
+      "clear": "清除",
+      "cancel": "取消"
+    },
+    "dialogs": {
+      "restore": {
+        "title": "恢复所有设置？",
+        "description": "这将把所有设置重置为默认值。"
+      },
+      "clear": {
+        "title": "清除本地数据？",
+        "description": "此操作无法撤销。"
+      }
+    },
+    "toasts": {
+      "imported": "导入完成 — 已恢复 {{modules}} 个模块、{{wallpapers}} 张壁纸。",
+      "importedPartial": "导入完成 — 已恢复 {{modules}} 个模块、{{wallpapers}} 张壁纸，{{failed}} 张壁纸恢复失败。",
+      "importError": "不是有效的 KNav 配置文件。",
+      "exported": "导出完成",
+      "restored": "已恢复默认设置",
+      "cleared": "本地数据已清除，正在刷新…",
+      "languageUpdated": "语言已更新",
+      "themeUpdated": "主题已更新"
+    },
+    "largeExport": {
+      "title": "文件较大",
+      "description": "配置文件约 {{size}} MB，确定继续导出？",
+      "cancel": "取消",
+      "confirm": "继续"
+    }
+  },
+  "appearance": {
+    "title": "外观",
+    "description": "自定义界面的外观与风格。",
+    "items": {
+      "theme": {
+        "title": "主题",
+        "description": "选择基础配色方案。"
+      },
+      "accent": {
+        "title": "强调色",
+        "description": "为高亮选择强调色。"
+      },
+      "animations": {
+        "title": "动画",
+        "description": "开启或减弱动效。"
+      },
+      "density": {
+        "title": "密度",
+        "description": "调整间距与紧凑程度。"
+      }
+    }
+  },
+  "background": {
+    "title": "背景",
+    "description": "配置壁纸与背景效果。",
+    "items": {
+      "wallpaper": {
+        "title": "壁纸",
+        "description": "选择或上传背景图片。"
+      },
+      "blur": {
+        "title": "模糊",
+        "description": "控制背景模糊程度。"
+      },
+      "overlay": {
+        "title": "遮罩",
+        "description": "调整背景暗化遮罩。"
+      },
+      "preview": {
+        "title": "背景预览",
+        "description": "预览当前背景。"
+      }
+    }
+  },
+  "search": {
+    "title": "搜索",
+    "description": "管理搜索提供商。",
+    "items": {
+      "defaultProvider": {
+        "title": "默认搜索提供商",
+        "description": "选择默认搜索引擎。"
+      },
+      "suggestions": {
+        "title": "搜索建议",
+        "description": "开启或关闭实时搜索建议。"
+      },
+      "history": {
+        "title": "搜索历史",
+        "description": "管理最近的搜索历史。"
+      }
+    }
+  },
+  "quickAccess": {
+    "title": "快捷入口",
+    "description": "整理你的固定网站与快捷方式。"
+  }
+}

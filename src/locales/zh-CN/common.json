@@ -1,0 +1,33 @@
+{
+  "app": {
+    "name": "KNav"
+  },
+  "actions": {
+    "close": "关闭",
+    "clear": "清空",
+    "confirm": "确认",
+    "cancel": "取消",
+    "import": "导入",
+    "export": "导出"
+  },
+  "state": {
+    "loading": "加载中",
+    "empty": "暂无内容"
+  },
+  "iconPicker": {
+    "trigger": "选择图标",
+    "searchPlaceholder": "搜索图标…",
+    "loading": "正在加载图标…",
+    "noResults": "没有匹配的图标。",
+    "empty": "没有可显示的图标。",
+    "previewHint": "悬停图标可预览。",
+    "tabs": {
+      "recent": "最近",
+      "all": "全部",
+      "brands": "品牌",
+      "system": "系统",
+      "developer": "开发",
+      "other": "其他"
+    }
+  }
+}

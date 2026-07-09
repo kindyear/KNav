@@ -1,0 +1,48 @@
+{
+  "title": "快捷入口",
+  "ariaLabel": "快捷入口",
+  "manager": {
+    "addWebsite": "添加网站",
+    "activated": "已启用",
+    "hidden": "已隐藏",
+    "enable": "启用",
+    "hide": "隐藏",
+    "edit": "编辑",
+    "delete": "删除",
+    "emptyActivated": "还没有启用任何网站。",
+    "emptyHidden": "没有已隐藏的网站。",
+    "limitReached": "最多只能添加 {{max}} 个快捷入口。",
+    "toasts": {
+      "added": "已添加网站",
+      "updated": "已更新网站",
+      "deleted": "已删除网站"
+    },
+    "confirmDelete": {
+      "title": "删除“{{name}}”？",
+      "description": "此操作无法撤销。",
+      "cancel": "取消",
+      "delete": "删除"
+    },
+    "dialog": {
+      "addTitle": "添加网站",
+      "editTitle": "编辑网站",
+      "description": "向快捷入口添加一个网站。网址必须以 http:// 或 https:// 开头。",
+      "name": "网站名称",
+      "namePlaceholder": "例如 GitHub",
+      "url": "网站网址",
+      "urlHint": "必须以 http:// 或 https:// 开头，例如 https://github.com",
+      "category": "分类",
+      "categoryPlaceholder": "例如 dev、ai、social",
+      "descriptionField": "描述",
+      "descriptionPlaceholder": "可选",
+      "accentColor": "主题色",
+      "accentColorPlaceholder": "可选，例如 #4285F4",
+      "clearColor": "清除",
+      "iconLabel": "选择图标",
+      "iconSearch": "搜索图标…",
+      "iconNoResults": "没有匹配的图标。",
+      "cancel": "取消",
+      "save": "保存"
+    }
+  }
+}

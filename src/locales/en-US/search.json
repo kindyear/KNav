@@ -1,0 +1,75 @@
+{
+  "placeholder": "Search anything...",
+  "placeholderWithProvider": "Search with {{provider}}...",
+  "ariaLabel": "Search anything",
+  "enterHint": "Enter ↵",
+  "engineGroupLabel": "Search engine",
+  "history": {
+    "title": "Recent",
+    "clear": "Clear",
+    "clearAriaLabel": "Clear search history",
+    "fillAriaLabel": "Fill search with \"{{query}}\" (searched via {{provider}})",
+    "viewAll": "View All History",
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "historyDialog": {
+    "title": "History",
+    "closeAriaLabel": "Close history",
+    "searchPlaceholder": "Search history...",
+    "clearAll": "Clear All",
+    "empty": "No search history yet.",
+    "noResults": "No matching history.",
+    "deleteAriaLabel": "Delete this entry",
+    "count_one": "{{count}} record",
+    "count_other": "{{count}} records",
+    "close": "Close",
+    "confirm": {
+      "title": "Clear all search history?",
+      "description": "This action cannot be undone.",
+      "cancel": "Cancel",
+      "clear": "Clear"
+    }
+  },
+  "providers": {
+    "addProvider": "Add Provider",
+    "activated": "Activated",
+    "available": "Available",
+    "enable": "Enable",
+    "disable": "Disable",
+    "edit": "Edit",
+    "delete": "Delete",
+    "emptyActivated": "No providers enabled yet.",
+    "emptyAvailable": "All providers are enabled.",
+    "limitReached": "You can enable at most {{max}} search providers.",
+    "toasts": {
+      "added": "Provider added",
+      "updated": "Provider updated",
+      "deleted": "Provider deleted"
+    },
+    "confirmDelete": {
+      "title": "Delete \"{{name}}\"?",
+      "description": "This action cannot be undone.",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    },
+    "dialog": {
+      "addTitle": "Add Provider",
+      "editTitle": "Edit Provider",
+      "description": "Create a custom search provider. The search URL must contain %s.",
+      "name": "Provider Name",
+      "namePlaceholder": "e.g. Google",
+      "url": "Search URL",
+      "urlHint": "Must contain %s, which is replaced with your keyword. e.g. https://www.google.com/search?q=%s",
+      "category": "Category",
+      "categoryPlaceholder": "e.g. general, ai, dev",
+      "descriptionField": "Description",
+      "descriptionPlaceholder": "Optional",
+      "iconLabel": "Pick an icon",
+      "iconSearch": "Search icons...",
+      "iconNoResults": "No matching icons.",
+      "cancel": "Cancel",
+      "save": "Save"
+    }
+  }
+}
