@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react'
+import { Loading } from '@/components/ui'
 import type { SettingsCategoryId } from './types'
 
 /**
@@ -37,7 +38,13 @@ export function SettingsContent({
   const Page = PAGES[activeId]
   return (
     <div className="flex-1 overflow-y-auto p-lg pb-[calc(env(safe-area-inset-bottom)+var(--spacing-lg))] [-webkit-overflow-scrolling:touch] sm:p-xl sm:pb-xl">
-      <Suspense fallback={null}>
+      <Suspense
+        fallback={
+          <div className="flex h-full items-center justify-center">
+            <Loading size="lg" />
+          </div>
+        }
+      >
         <Page />
       </Suspense>
     </div>
